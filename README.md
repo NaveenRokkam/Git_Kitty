@@ -2,15 +2,15 @@
 Documentation of frequently used git functionalities
 
 ***
-#Initializing
+# Initializing
 
-##Create a local git repo from remote
+## Create a local git repo from remote
 1. Clone the repo from remote
 ```
 git clone https://github.com/NaveenRokkam/Git_Kitty.git
 ```
 ---
-##Create a Remote Git repo from local
+## Create a Remote Git repo from local
 1. Create new repo on github
 2. Open Terminal, navigate to the local directory
 3. Initialize Git repo
@@ -37,7 +37,10 @@ git push -u origin master
 ```
 
 ***
-#Branch
+# Branch
+
+#### Show a list of all branches `git branch`
+
 
 ### Create a new local branch from existing Branch
 ```
@@ -59,7 +62,7 @@ git fetch & git checkout <bNewRemote>
 2. Push the changes the Remote `git push origin <BName>`
 
 ***
-#Rebase
+# Rebase
 
 ## Play branch <BName> on master
 The user is currently making changes in local branch BName and wants to merge to Master
@@ -75,7 +78,7 @@ Fast forward the master `git merge <BName>``
 
 
 ***
-#Version of Commit
+# Version of Commit
 #### Show Commit history for Branch <BName>: `git log <BName>`
 #### Show the Head and Master in commit History for branch <BName>: `git log <BName> -- decorate`
 
