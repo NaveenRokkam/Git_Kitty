@@ -1,7 +1,6 @@
 # Git Kitty
 Documentation of frequently used git functionalities
 
-***
 # Initializing
 
 ## Create a local git repo from remote
@@ -39,7 +38,8 @@ git push -u origin master
 ***
 # Branch
 
-#### Show a list of all branches `git branch`
+#### Show a list of all branches
+`git branch`
 
 
 ### Create a new local branch from existing Branch
@@ -79,8 +79,11 @@ Fast forward the master `git merge <BName>``
 
 ***
 # Version of Commit
-#### Show Commit history for Branch <BName>: `git log <BName>`
-#### Show the Head and Master in commit History for branch <BName>: `git log <BName> -- decorate`
+#### Show Commit history for Branch <BName>:
+`git log <BName>`
+#### Show the Head and Master in commit History for branch <BName>:
+`git log <BName> -- decorate`
 
+```
 git worktree list
 ```
