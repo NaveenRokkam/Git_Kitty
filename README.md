@@ -107,10 +107,10 @@ git worktree list
 ```
 Now the upstream repository changes are available in origin/master and local master branches
 
-Update your local branch <br> with local master using [rebase](#rebase)
+Update your local branch <br> with local master using [rebase](#id123)
 
 
-# When local branch is not in sync with local master (#rebase)
+# When local branch is not in sync with local master (#id123)
 ``` git checkout <br>
     git rebase master
 ```
