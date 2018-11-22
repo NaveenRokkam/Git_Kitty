@@ -1,5 +1,11 @@
 # Git Kitty
 Documentation of frequently used git functionalities
+[Initializing]
+[Branch]
+[Version]
+[Fork Scenarios]
+[Rebase]
+
 
 # Initializing
 
@@ -43,41 +49,32 @@ git push -u origin master
 #### Show a list of all branches
 `git branch`
 
-
 ### Create a new local branch from existing Branch
 ```
 git branch <BName>
 ```
 
-### Update local work directory files to branch <BName>
+#### Update local work directory files to branch <BName>
 ```
 git checkout <BName>
 ```
 
-### Fetching a new branch <bNewRemote> from Remote (github) to local repository
+#### Fetching a new branch <bNewRemote> from Remote (github) to local repository
 ```
 git fetch & git checkout <bNewRemote>
 ```
 
-### Submit a Branch to Remote
+#### Submit a Branch to Remote
 1. Checkout the branch to submit to remote `git checkout <BName>`
 2. Push the changes the Remote `git push origin <BName>`
 
-***
-# Rebase
-
-## Play branch <BName> on master
-The user is currently making changes in local branch BName and wants to merge to Master
-
-1. Play the changes of branch on Master `git rebase master`
-2. Want to add more files `git add <FileName>`
-3. Continue rebase i.e. play the new files on master `git rebase -continue`
-4. git checkout master
-```
-Fast forward the master `git merge <BName>``
+#### Push changes in local <Br> to local <BName>
+```git push . <Br>:<BName>
 ```
 
-
+#### Push changes from local branch <Br> to remote <BName>
+```git push origin <Br>:<BName>
+```
 
 ***
 # Version of Commit
@@ -90,7 +87,10 @@ Fast forward the master `git merge <BName>``
 git worktree list
 ```
 
-# You forked a source and source has moved ahead. How to make your Fork up to date with Source and then apply your local <br> changes to Source.
+# Fork Scenarios
+
+### Scenario 1:
+You forked a source and source has moved ahead. How to make your Fork up to date with Source and then apply your local <br> changes to Source.
 
 #### Add a new remote : `Upstream` for the Source git repo
 1. ``` git remote add Upstream https://github.com/NaveenRokkam/Git_Kitty.git ( Originial source which was used to fork)
@@ -107,17 +107,24 @@ git worktree list
 ```
 Now the upstream repository changes are available in origin/master and local master branches
 
-Update your local branch <br> with local master using [rebase](#id123)
+Update your local branch <br> with local master using [rebase]
 
 
-# When local branch is not in sync with local master (#id123)
+# Rebase
+#### When local branch is not in sync with local master
 ``` git checkout <br>
     git rebase master
 ```
 Rebase: The current branch <br> would be brought to the same commit as Master and the delta changes in <br> would be played on top of the master Commit.
+
+Add more files and continue rebasing...
+1. Want to add more files `git add <FileName>`
+2. Continue rebase i.e. play the new files on master `git rebase -continue`
 
 Now there is a new commit and the master is behind.
 ``` git checkout master
     git merge <br>
 ```
 This will fast forward master to the newest commit on <br>
+
+***
