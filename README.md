@@ -22,26 +22,15 @@ git clone https://github.com/NaveenRokkam/Git_Kitty.git
 2. Create new repo on local machine
    1. Open Terminal, navigate to the local directory
    2. Initialize Git repo `git init`
-
-   3. Add files to local git repo
-```
-git add .
-```
-   - Commit them
-```
-git commit -m “First commit"
-```
+   3. Add files to local git repo `git add`
+   4. Commit them `git commit -m “First commit"`
 3. Link the remote repo and local repo
-   - Copy Remote repo URL (https://github.com/NaveenRokkam/Git_Kitty.git)
-   - Add remote URL info
+   1. Copy Remote repo URL (https://github.com/NaveenRokkam/Git_Kitty.git)
+   2. Add remote URL info ```
+      git remote add origin https://github.com/NaveenRokkam/Git_Kitty.git
+      git remote -v  // > version of remote
 ```
-git remote add origin https://github.com/NaveenRokkam/Git_Kitty.git
-git remote -v  // > version of remote
-```
-   - Push change to remote
-```
-git push -u origin master
-```
+   3. Push change to remote `git push -u origin master`
 
 ***
 # Branch
@@ -50,31 +39,23 @@ git push -u origin master
 `git branch`
 
 ### Create a new local branch from existing Branch
-```
-git branch <BName>
-```
+`git branch <BName>`
 
 #### Update local work directory files to branch <BName>
-```
-git checkout <BName>
-```
+`git checkout <BName>`
 
 #### Fetching a new branch <bNewRemote> from Remote (github) to local repository
-```
-git fetch & git checkout <bNewRemote>
-```
+`git fetch & git checkout <bNewRemote>`
 
 #### Submit a Branch to Remote
 1. Checkout the branch to submit to remote `git checkout <BName>`
 2. Push the changes the Remote `git push origin <BName>`
 
 #### Push changes in local <Br> to local <BName>
-```git push . <Br>:<BName>
-```
+`git push . <Br>:<BName>`
 
 #### Push changes from local branch <Br> to remote <BName>
-```git push origin <Br>:<BName>
-```
+`git push origin <Br>:<BName>`
 
 ***
 # Version of Commit
@@ -83,9 +64,7 @@ git fetch & git checkout <bNewRemote>
 #### Show the Head and Master in commit History for branch <BName>:
 `git log <BName> -- decorate`
 
-```
-git worktree list
-```
+`git worktree list`
 
 # Fork Scenarios
 
