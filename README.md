@@ -73,8 +73,9 @@ git remote -v  // > version of remote
 You forked a source and source has moved ahead. How to make your Fork up to date with Source and then apply your local branch `br` changes to Source.
 
 #### Add a new remote : `Upstream` for the Source git repo
-``` git remote add Upstream https://github.com/NaveenRokkam/Git_Kitty.git ( Originial source which was used to fork)
-    git remote -v
+```
+  git remote add Upstream https://github.com/NaveenRokkam/Git_Kitty.git ( Originial source which was used to fork)
+  git remote -v
 ```
 
 #### Fetch the `Upstream` changes into local master
@@ -89,7 +90,8 @@ Update your local branch `br` with local master using [rebase]
 
 # Rebase
 #### When local branch is not in sync with local master
-``` git checkout <br>
+```
+    git checkout <br>
     git rebase master
 ```
 Rebase: The current branch `br` would be brought to the same commit as Master and the delta changes in `br` would be played on top of the master Commit.
@@ -99,7 +101,8 @@ Add more files and continue rebasing...
 2. Continue rebase i.e. play the new files on master `git rebase -continue`
 
 Now there is a new commit and the master is behind.
-``` git checkout master
+```
+    git checkout master
     git merge <br>
 ```
 This will fast forward master to the newest commit on `br`
