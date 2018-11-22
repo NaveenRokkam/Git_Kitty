@@ -3,8 +3,8 @@ Documentation of frequently used git functionalities
 
 ## Sections
 [Initializing](#Initializing)  
-[Branch](#branch)  
-[Version]  
+[Branch](#Branch)  
+[Version](#Version-of-Commit)
 [Fork Scenarios]  
 [Rebase]  
 
