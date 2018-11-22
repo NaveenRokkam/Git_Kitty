@@ -22,27 +22,27 @@ git clone https://github.com/NaveenRokkam/Git_Kitty.git
 ## Create a Remote Git repo from local
 1. Create new repo on github website
 2. Create new repo on local machine
-  2.1. Open Terminal, navigate to the local directory
-  2.2. Initialize Git repo
+  1. Open Terminal, navigate to the local directory
+  2. Initialize Git repo
 ```
 git init
 ```
-  2.3. Add files to local git repo
+  3. Add files to local git repo
 ```
 git add .
 ```
-  2.4. Commit them
+  4. Commit them
 ```
 git commit -m “First commit"
 ```
 3. Link the remote repo and local repo
-3.1 Copy Remote repo URL (https://github.com/NaveenRokkam/Git_Kitty.git)
-3.2 Add remote URL info
+  1. Copy Remote repo URL (https://github.com/NaveenRokkam/Git_Kitty.git)
+  2. Add remote URL info
 ```
 git remote add origin https://github.com/NaveenRokkam/Git_Kitty.git
 git remote -v  // > version of remote
 ```
-3.3 Push change to remote
+  3. Push change to remote
 ```
 git push -u origin master
 ```
