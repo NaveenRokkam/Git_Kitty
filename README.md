@@ -21,7 +21,7 @@ git clone https://github.com/NaveenRokkam/Git_Kitty.git
 1. Create new repo on github website
 2. Create new repo on local machine
   1. Open Terminal, navigate to the local directory
-  2. Initialize Git repo
+  * Initialize Git repo
 ```
 git init
 ```
