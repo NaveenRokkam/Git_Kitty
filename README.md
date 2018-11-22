@@ -9,12 +9,10 @@ Documentation of frequently used git functionalities
 [Rebase](#Rebase)  
 
 
-
-
 # Initializing
 
 ## Create a local git repo from remote
-1. Clone the repo from remote
+Clone the repo from remote
 ```
 git clone https://github.com/NaveenRokkam/Git_Kitty.git
 ```
