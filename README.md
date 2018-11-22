@@ -3,7 +3,7 @@ Documentation of frequently used git functionalities
 
 ## Sections
 [Initializing](#Initializing)  
-[Branch] (#fork-scenarios)  
+[Branch](#fork-scenarios)  
 [Version]  
 [Fork Scenarios]  
 [Rebase]  
