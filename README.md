@@ -69,24 +69,21 @@ git clone https://github.com/NaveenRokkam/Git_Kitty.git
 # Fork Scenarios
 
 ### Scenario 1:
-You forked a source and source has moved ahead. How to make your Fork up to date with Source and then apply your local <br> changes to Source.
+You forked a source and source has moved ahead. How to make your Fork up to date with Source and then apply your local branch `br` changes to Source.
 
 #### Add a new remote : `Upstream` for the Source git repo
-1. ``` git remote add Upstream https://github.com/NaveenRokkam/Git_Kitty.git ( Originial source which was used to fork)
-```
-2. ``` git remote -v
+``` git remote add Upstream https://github.com/NaveenRokkam/Git_Kitty.git ( Originial source which was used to fork)
+    git remote -v
 ```
 
 #### Fetch the `Upstream` changes into local master
-```git pull upstream master
-```
+`git pull upstream master`
 
 #### Push changes from local master to Originial
-``` git push origin master
-```
+`git push origin master`
 Now the upstream repository changes are available in origin/master and local master branches
 
-Update your local branch <br> with local master using [rebase]
+Update your local branch `br` with local master using [rebase]
 
 
 # Rebase
@@ -94,7 +91,7 @@ Update your local branch <br> with local master using [rebase]
 ``` git checkout <br>
     git rebase master
 ```
-Rebase: The current branch <br> would be brought to the same commit as Master and the delta changes in <br> would be played on top of the master Commit.
+Rebase: The current branch `br` would be brought to the same commit as Master and the delta changes in `br` would be played on top of the master Commit.
 
 Add more files and continue rebasing...
 1. Want to add more files `git add <FileName>`
@@ -104,6 +101,6 @@ Now there is a new commit and the master is behind.
 ``` git checkout master
     git merge <br>
 ```
-This will fast forward master to the newest commit on <br>
+This will fast forward master to the newest commit on `br`
 
 ***
