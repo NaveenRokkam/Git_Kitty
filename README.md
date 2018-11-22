@@ -107,7 +107,7 @@ git worktree list
 ```
 Now the upstream repository changes are available in origin/master and local master branches
 
-Now your local branch <br> is not in sync with local Master. (# When local branch is not in sync with local master)
+Now your local branch <br> is not in sync with local Master. (# When-local-branch-is-not-in-sync-with-local-master)
 
 
 
