@@ -1,7 +1,7 @@
 # Git Kitty
 Documentation of frequently used git functionalities
-[Initializing]
-[Branch]
+[Initializing](#Initializing)
+[Branch] (#Fork Scenarios)
 [Version]
 [Fork Scenarios]
 [Rebase]
