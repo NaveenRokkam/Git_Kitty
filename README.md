@@ -24,10 +24,10 @@ git clone https://github.com/NaveenRokkam/Git_Kitty.git
    2. Initialize Git repo `git init`
    3. Add files to local git repo `git add`
    4. Commit them `git commit -m “First commit"`
-3. Link the remote repo and local repo
+3. Link the remote repository and local repository
    1. Copy Remote repo URL (https://github.com/NaveenRokkam/Git_Kitty.git)
-   2. Add remote URL info ```
-      git remote add origin https://github.com/NaveenRokkam/Git_Kitty.git
+   2. Add remote URL info
+```   git remote add origin https://github.com/NaveenRokkam/Git_Kitty.git
       git remote -v  // > version of remote
 ```
    3. Push change to remote `git push -u origin master`
