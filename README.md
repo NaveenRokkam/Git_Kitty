@@ -38,7 +38,7 @@ git clone https://github.com/NaveenRokkam/Git_Kitty.git
 #### Show a list of all branches
 `git branch`
 
-### Create a new local branch from existing Branch
+#### Create a new local branch from existing Branch
 `git branch <BName>`
 
 #### Update local work directory files to branch <BName>
@@ -51,17 +51,17 @@ git clone https://github.com/NaveenRokkam/Git_Kitty.git
 1. Checkout the branch to submit to remote `git checkout <BName>`
 2. Push the changes the Remote `git push origin <BName>`
 
-#### Push changes in local <Br> to local <BName>
-`git push . <Br>:<BName>`
+#### Push changes in local `Branch1` to local `Branch2`
+`git push . <Branch1>:<Branch2>`
 
-#### Push changes from local branch <Br> to remote <BName>
-`git push origin <Br>:<BName>`
+#### Push changes from local branch `Branch1` to remote `Branch2`
+`git push origin <Branch1>:<Branch2>`
 
 ***
 # Version of Commit
-#### Show Commit history for Branch <BName>:
+#### Show Commit history for Branch `BName`:
 `git log <BName>`
-#### Show the Head and Master in commit History for branch <BName>:
+#### Show the Head and Master in commit History for branch `BName`:
 `git log <BName> -- decorate`
 
 `git worktree list`
