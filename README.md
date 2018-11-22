@@ -4,9 +4,9 @@ Documentation of frequently used git functionalities
 ## Sections
 [Initializing](#Initializing)  
 [Branch](#Branch)  
-[Version](#Version-of-Commit)
-[Fork Scenarios]  
-[Rebase]  
+[Version](#Version-of-Commit)  
+[Fork Scenarios](#Fork-Scenarios)  
+[Rebase](#Rebase)  
 
 
 
