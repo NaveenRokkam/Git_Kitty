@@ -1,10 +1,14 @@
 # Git Kitty
 Documentation of frequently used git functionalities
-[Initializing](#Initializing)
-[Branch] (#fork-scenarios)
-[Version]
-[Fork Scenarios]
-[Rebase]
+
+## Sections
+[Initializing](#Initializing)  
+[Branch] (#fork-scenarios)  
+[Version]  
+[Fork Scenarios]  
+[Rebase]  
+
+
 
 
 # Initializing
