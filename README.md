@@ -10,27 +10,29 @@ git clone https://github.com/NaveenRokkam/Git_Kitty.git
 ```
 ---
 ## Create a Remote Git repo from local
-1. Create new repo on github
-2. Open Terminal, navigate to the local directory
-3. Initialize Git repo
+1. Create new repo on github website
+2. Create new repo on local machine
+2.1 Open Terminal, navigate to the local directory
+2.2 Initialize Git repo
 ```
 git init
 ```
-4. Add files to local git repo
+2.3. Add files to local git repo
 ```
 git add .
 ```
-5. Commit them
+2.4. Commit them
 ```
 git commit -m “First commit"
 ```
-6. Copy Remote repo URL (https://github.com/NaveenRokkam/Git_Kitty.git)
-7. Add remote URL info
+3. Link the remote repo and local repo
+3.1 Copy Remote repo URL (https://github.com/NaveenRokkam/Git_Kitty.git)
+3.2 Add remote URL info
 ```
 git remote add origin https://github.com/NaveenRokkam/Git_Kitty.git
 git remote -v  // > version of remote
 ```
-8. Push change to remote
+3.3 Push change to remote
 ```
 git push -u origin master
 ```
@@ -87,3 +89,38 @@ Fast forward the master `git merge <BName>``
 ```
 git worktree list
 ```
+
+# You forked a source and source has moved ahead. How to make your Fork up to date with Source and then apply your local <br> changes to Source.
+
+#### Add a new remote : `Upstream` for the Source git repo
+1. ``` git remote add Upstream https://github.com/NaveenRokkam/Git_Kitty.git ( Originial source which was used to fork)
+```
+2. ``` git remote -v
+```
+
+#### Fetch the `Upstream` changes into local master
+```git pull upstream master
+```
+
+#### Push changes from local master to Originial
+``` git push origin master
+```
+Now the upstream repository changes are available in origin/master and local master branches
+
+Now your local branch <br> is not in sync with local Master. (# When local branch is not in sync with local master)
+
+
+
+
+
+# When local branch is not in sync with local master
+``` git checkout <br>
+    git rebase master
+```
+Rebase: The current branch <br> would be brought to the same commit as Master and the delta changes in <br> would be played on top of the master Commit.
+
+Now there is a new commit and the master is behind.
+``` git checkout master
+    git merge <br>
+```
+This will fast forward master to the newest commit on <br>
