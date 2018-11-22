@@ -1,5 +1,5 @@
 # Git Kitty
-Documentation of frequently used git functionalities
+Documentation of frequently used git functionalities. This is work in progress document. Feel free to contact me for any suggestions and questions.
 
 ## Sections
 [Initializing](#Initializing)  
